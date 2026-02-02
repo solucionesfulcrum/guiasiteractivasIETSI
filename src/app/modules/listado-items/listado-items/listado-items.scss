@@ -1,0 +1,79 @@
+mat-form-field, mat-label{
+    font-size: 14px;
+}
+
+.form-reducido{
+    width: 140px
+}
+
+::ng-deep mat-form-field{
+    .mat-mdc-select-value-text{
+        font-size: 14px;
+    }
+    
+    .mdc-floating-label--float-above{
+        top: calc(var(--mat-form-field-container-height, 56px) / 2) !important;
+    }
+    
+    .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label{
+        top: calc(var(--mat-form-field-container-height, 40px) / 2);
+    }
+
+    .mdc-text-field--outlined .mat-mdc-form-field-infix, .mdc-text-field--no-label .mat-mdc-form-field-infix{
+        padding-top: var(--mat-form-field-container-vertical-padding, 10px) !important;
+        padding-bottom: var(--mat-form-field-container-vertical-padding, 10px) !important;
+    }
+
+    .mat-mdc-form-field-infix{
+        min-height: var(--mat-form-field-container-height, 40px) !important;
+    }
+}
+
+.expansion-panel {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #1976d2;
+  }
+  
+  /* HEADER */
+  .panel-header {
+    background-color: #1976d2;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  
+  /* ICONO */
+  .icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  /* CONTENIDO */
+  .panel-content {
+    background-color: white;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 1s ease; // 👈 animación de 1s
+  }
+  
+  /* cuando está expandido */
+  .panel-content.expanded {
+    max-height: 350px; // suficientemente grande
+  }
+  
+  /* padding interno (truco para que no afecte la animación) */
+  .content-inner {
+    padding: 12px;
+  }
+  

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root{
+  --color-primario : #339999;
+  --color-button-primario: #0080ca;
+  --color-primario-Transparente : rgb(51, 153, 153, 0.3);
+  --color-primario-Claro : #14b8a6;
+  --color-fondo-claro: #F0F9F9;
+  --color-text-secondary: #64748B;
+  --color-mezclado: linear-gradient(90deg, var(--color-primario) 20%, rgba(7,127,200,1) 100%);
+  --color-black-alt: #344563;
+}
+
+.bg-mezclado{
+  background: var(--color-mezclado);
+}
+
+.estilo-card-personalizado{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.botonApariencia{
+  border-radius: 5px;
+}
+
+.botonApariencia, .estilo-card-personalizado{
+  color: #3e4348;
+  box-shadow: 1px 1px 4px 0px #00000066;
+}
