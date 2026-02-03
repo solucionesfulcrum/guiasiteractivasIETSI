@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
@@ -26,6 +27,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatProgressBarModule,
     MatInputModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
     MatFormFieldModule
   ]
 })

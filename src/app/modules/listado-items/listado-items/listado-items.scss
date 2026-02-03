@@ -3,7 +3,7 @@ mat-form-field, mat-label{
 }
 
 .form-reducido{
-    width: 140px
+    width: 100%;
 }
 
 ::ng-deep mat-form-field{
@@ -29,6 +29,36 @@ mat-form-field, mat-label{
     }
 }
 
+.item-expansion-group{
+  flex-direction: column;
+  
+}
+
+.item-expansion-panel{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-expansion-group, .item-expansion-panel{
+  display: flex;
+  gap: 0.625rem;            /* gap-2.5 */
+  min-height: 2.5rem;           /* h-10 */
+  font-size: 16px;          /* text-[16px] */
+  padding-left: 0.25rem;    /* px-1 */
+  padding-right: 0.25rem;
+  padding-top: 0.375rem;    /* py-1.5 */
+  padding-bottom: 0.375rem;
+  border-radius: 1rem;      /* rounded-2xl */
+  cursor: pointer;
+  font-weight: 500;         /* font-medium */
+  color: var(--color-black-alt);
+}
+
+.item-expansion-panel:hover, .item-expansion-group:hover{
+  background-color: #e5e7eb;
+}
+
 .expansion-panel {
     width: 100%;
     border-radius: 6px;
@@ -36,7 +66,6 @@ mat-form-field, mat-label{
     border: 1px solid #1976d2;
   }
   
-  /* HEADER */
   .panel-header {
     background-color: #1976d2;
     font-size: 14px;
@@ -50,7 +79,6 @@ mat-form-field, mat-label{
     user-select: none;
   }
   
-  /* ICONO */
   .icon {
     transition: transform 0.3s ease;
   }
@@ -59,21 +87,21 @@ mat-form-field, mat-label{
     transform: rotate(180deg);
   }
   
-  /* CONTENIDO */
   .panel-content {
     background-color: white;
     max-height: 0;
     overflow: auto;
-    transition: max-height 1s ease; // 👈 animación de 1s
+    transition: max-height 1s ease;
   }
   
-  /* cuando está expandido */
   .panel-content.expanded {
-    max-height: 350px; // suficientemente grande
+    max-height: 350px;
   }
   
-  /* padding interno (truco para que no afecte la animación) */
   .content-inner {
     padding: 12px;
   }
-  
+
+  .item-selected{
+    background-color: #d7e3ff;
+  }
